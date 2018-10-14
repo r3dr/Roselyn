@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<head>
+    <head>
+        <title> MY GRADE</title>
+    </head>
+<body>
+    <p style="color:blue"id="Display1"></p>
+    <p id="Display2"></p>
+    <p id="Display3"></p>
+    <p id ="Display4"></p>
+    <p style="color: red" id="Answer"></p>
+    <script>
+        var G =prompt("Please Input your grade");
+        var IDnum = prompt("Please Input your ID number");
+        var StudentFName = prompt("Please Input your first name");
+        var studentLname = prompt("Please Input your last name");
+
+        document.getElementById("Display2").innerHTML = IDnum;
+        document.getElementById("Display3").innerHTML = StudentFName;
+        document.getElementById("Display4").innerHTML = studentLname;
+
+        if(G > 69 && G <= 100)
+        { 
+            if(G % 2 == 0)
+            {
+            document.getElementById("Display1").innerHTML =  G +" "+ "PASSED!";
+            }
+            else if( G % 2 != 0)
+            {
+              document.getElementById('Answer').innerHTML=  G + " "+ "PASSED";
+            }
+        }
+        else 
+        { 
+          if(G % 2 == 0)
+          {
+             document.getElementById("Display1").innerHTML =  G + " "+ "FAILED";
+          }
+          else {
+                 document.getElementById('Answer').innerHTML=  G + " "+ "FAILED";
+          }
+        }
+
+
+    </script>
+</body>
+</head>
